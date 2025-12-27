@@ -20,8 +20,8 @@ await connectDB();
 app.use(cors());
 
 // 2. Stripe Webhooks MUST use app.post and be BEFORE express.json()
-app.post(
-  "/api/stripe",
+app.use(
+  '/api/stripe',
   express.raw({ type: "application/json" }),
   stripeWebhooks
 );

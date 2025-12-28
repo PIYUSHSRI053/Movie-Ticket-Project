@@ -92,32 +92,46 @@ const TrailerSections = () => {
           >
             {shows.map((movie) => (
               <div
-                key={movie._id}
-                onClick={() => openTrailer(movie.title)}
-                className="relative cursor-pointer shrink-0 
-                           w-[160px] md:w-[200px] group"
-              >
-                <img
-                  src={
-                    movie.poster_path
-                      ? image_base_url + movie.poster_path
-                      : "/fallback-movie.jpg"
-                  }
-                  alt={movie.title}
-                  className="rounded-lg w-full h-[230px] md:h-[300px]
-                             border-[8px] md:border-[10px] border-primary/30
-                             object-cover brightness-75
-                             group-hover:brightness-95 transition"
-                />
+  key={movie._id}
+  onClick={() => openTrailer(movie.title)}
+  className="cursor-pointer shrink-0 
+             w-[160px] md:w-[200px] group"
+>
+  <div className="relative">
+    <img
+      src={
+        movie.poster_path
+          ? image_base_url + movie.poster_path
+          : "/fallback-movie.jpg"
+      }
+      alt={movie.title}
+      className="rounded-lg w-full h-[230px] md:h-[300px]
+                 border-[8px] md:border-[10px] border-primary/30
+                 object-cover brightness-75
+                 group-hover:brightness-95 transition"
+    />
 
-                <PlayCircleIcon
-                  strokeWidth={1.6}
-                  className="absolute top-1/2 left-1/2 w-10 h-10 md:w-12 md:h-12
-                             -translate-x-1/2 -translate-y-1/2
-                             text-white opacity-90
-                             group-hover:scale-110 transition"
-                />
-              </div>
+    <PlayCircleIcon
+      strokeWidth={1.6}
+      className="absolute top-1/2 left-1/2 w-10 h-10 md:w-12 md:h-12
+                 -translate-x-1/2 -translate-y-1/2
+                 text-white opacity-90
+                 group-hover:scale-110 transition"
+    />
+  </div>
+
+  {/* Movie title */}
+  <p
+    className="mt-2 text-sm md:text-base
+               text-gray-300 font-medium
+               text-center truncate
+               group-hover:text-white transition"
+    title={movie.title}
+  >
+    {movie.title}
+  </p>
+</div>
+
             ))}
           </div>
         </div>

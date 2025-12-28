@@ -5,8 +5,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   auth: {
     user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
+    pass: process.env.SMTP_PASSWORD,
+  }
 });
 
 const sendEmail = async ({ to, subject, body }) => {
@@ -14,7 +14,7 @@ const sendEmail = async ({ to, subject, body }) => {
     from: process.env.SENDER_EMAIL,
     to,
     subject,
-    html: body,
+    html: body
   });
 
   return response;

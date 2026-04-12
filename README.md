@@ -1,4 +1,4 @@
-# 🎬 Movie Ticket Booking Application
+<p align="center"># 🎬 Movie Ticket Booking Application </p>
 
 <p align="center">
   <b>Full-stack movie ticket booking web application</b><br/>

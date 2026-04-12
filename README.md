@@ -1,4 +1,4 @@
-<p align="center"># 🎬 Movie Ticket Booking Application </p>
+<h1 align="center"> 🎬 Movie Ticket Booking Application </h1>
 
 <p align="center">
   <b>Full-stack movie ticket booking web application</b><br/>

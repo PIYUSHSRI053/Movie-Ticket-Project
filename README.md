@@ -164,19 +164,3 @@ If you liked this project:
 
 ---
 
-# 📜 License
-
-This project is licensed under the MIT License.
-
-```
-
-This README gives your project:
-- Professional GitHub look
-- Better recruiter impression
-- ATS-friendly keywords
-- Cleaner structure
-- Strong portfolio presentation
-
-:contentReference[oaicite:4]{index=4}
-::contentReference[oaicite:5]{index=5}
-```
